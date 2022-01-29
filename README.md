@@ -1,4 +1,4 @@
-#Test Project with Page Object Model and lint checks
+# Test Project with Page Object Model and lint checks
 
 **Important note :** 
 
@@ -7,12 +7,12 @@
 * Chromedriver executable is available in src/test/resources
 
 
-##Installation
+## Installation
 **Pre-requisites** 
 
 JDK 1.8
 
-##Tech stack 
+## Tech stack 
 1. **Build management** : Gradle
 2. **Unit testing** : TestNG
 3. **Language** : Java
@@ -38,10 +38,11 @@ java -jar selenium-server-4.1.1.jar standalone
 ./gradlew clean check -x test
 ```
 
-**Checkstyles Reports**
+### Checkstyles Reports
 
 The report will be generated under build/reports/checkstyle
 
-**SpotBug Reports**
+### SpotBug Reports
+
 The report will be generated under build/reports/spotbugs
 
