@@ -46,3 +46,7 @@ The report will be generated under build/reports/checkstyle
 
 The report will be generated under build/reports/spotbugs
 
+### To run selenium grid on Jenkins
+
+Add the Jenkinsfile script to your Jenkins pipeline with the selenium-server binaries installed.
+
