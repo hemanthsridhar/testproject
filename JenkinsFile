@@ -1,0 +1,27 @@
+pipeline {
+    stages {
+        stage('Clone repository') {
+            steps{
+                checkout scm
+            }
+        }
+
+        stage('lint checks') {
+            steps{
+	            sh './gradlew clean check -x test'
+	        }
+        }
+
+        stage('start grid as standalone') {
+            steps{
+	            sh 'java -jar selenium-server-4.1.1.jar standalone &'
+	        }
+        }
+
+        stage('run tests') {
+		    steps{
+		    sh "./gradlew clean test"
+		    }
+        }
+    }
+}
