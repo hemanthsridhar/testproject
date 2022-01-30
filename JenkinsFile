@@ -14,7 +14,7 @@ pipeline {
 
         stage('start grid as standalone') {
             steps{
-	            sh 'java -jar selenium-server-4.1.1.jar standalone &'
+	            sh 'java -jar src/test/resources/selenium-server-4.1.1.jar standalone &'
 	        }
         }
 

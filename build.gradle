@@ -57,7 +57,7 @@ dependencies {
 }
 
 test {
-    systemProperty("hub","localhost:1234")
+    systemProperty("hub",System.getProperty("hub"))
     useTestNG(){
         useDefaultListeners = true
     }

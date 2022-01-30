@@ -29,7 +29,13 @@ Setup the selenium server ( Executable available in src/test/resources/ )
 java -jar selenium-server-4.1.1.jar standalone
 ```
 ```
-./gradlew clean test
+./gradlew clean test -Dhub=hubAddress
+```
+Example,
+By default, 
+
+```
+./gradlew clean test -Dhub=localhost:4444
 ```
 
 * To run the lint checks
